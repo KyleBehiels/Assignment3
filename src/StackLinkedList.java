@@ -25,6 +25,13 @@ public class StackLinkedList<T> {
 			topNode = tempNode;
 		}
 	}
+	//Returns a boolean indicating whether or not the stack is empty
+	public boolean isEmpty(){
+		if(topNode == null){
+			return true;
+		}
+		return false;
+	}
 	
 	//Pop method for the stack (return and remove top node)
 	public T pop(){
